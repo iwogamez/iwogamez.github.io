@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #2c2c2c;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav a {
+  margin-left: 1rem;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #00c3ff;
+}
+
+.search-container {
+  text-align: center;
+  margin: 1rem;
+}
+
+.search-container input {
+  padding: 0.5rem;
+  width: 80%;
+  border-radius: 10px;
+  border: none;
+}
+
+.product-card {
+  text-align: center;
+  margin: 2rem;
+  background-color: #333;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  animation: fadeInUp 1s ease;
+}
+
+.product-card img {
+  width: 150px;
+  height: 200px;
+}
+
+.redeem-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #00c3ff;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.redeem-btn:hover {
+  background: #009dcf;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s ease;
+}
+
+.popup.hidden {
+  display: none;
+}
+
+.popup-content {
+  background: #2c2c2c;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.popup-content input {
+  padding: 0.5rem;
+  width: 80%;
+  margin: 1rem 0;
+  border-radius: 10px;
+  border: none;
+}
+
+@keyframes fadeInUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

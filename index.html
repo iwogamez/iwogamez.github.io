@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IWOGAMEZ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">IWOGAMEZ</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Support</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="search-container">
+      <input type="text" placeholder="Cari produk..." id="searchInput"/>
+    </div>
+
+    <div class="product-card">
+      <img src="gta5.png" alt="gta5">
+      <h3>Grand Theft Auto V</h3>
+      <button class="redeem-btn" data-product-id="gta5">Redeem</button>
+    </div>
+    <div class="product-card">
+      <img src="Schedule 1.jpg" alt="scd1">
+      <h3>Schedule 1</h3>
+      <button class="redeem-btn" data-product-id="scd1">Redeem</button>
+    </div>
+  </main>
+
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <h2>Masukkan ID Pembelian</h2>
+      <input type="text" id="purchaseIdInput" placeholder="id"/>
+      <button onclick="submitID()">Submit</button>
+      <button onclick="closePopup()">Batal</button>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
