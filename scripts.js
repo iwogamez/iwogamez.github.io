@@ -1,6 +1,6 @@
 const validIDs = {
-  'gta5': 'gta5',
-  'scd1': 'scd1',
+  'J2MAfB8RikXE95jvHZcYeabswL4Sd6': 'gta5',
+  '7q2mYJA5PaSxfMWdnXsc8C9zgHoUBp': 'scd1',
 };
 
 let selectedProductId = null;
